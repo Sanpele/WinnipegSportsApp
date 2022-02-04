@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sportsVenueCard1"
+        android:layout_margin="12dp"
+        android:elevation="4dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+            <TextView
+                android:id="@+id/sportsVenueText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="390dp"
+
+                android:text="Sports venue"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sportsVenueAddress"
+                android:layout_below="@+id/sportsVenueText1"
+                android:text="address"
+                />
+
+            <TextView
+                android:id="@+id/sportsVenueDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_below="@id/sportsVenueAddress"
+                android:text="Description"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+
+                android:id="@+id/venueImage1"
+                android:layout_toEndOf="@+id/sportsVenueText1"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

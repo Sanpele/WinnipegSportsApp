@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nhl_main"
+    tools:context=".presentation.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:weightSum="2"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp">-->
+
+            <Button
+                android:id="@+id/currentlyPlayingMenu"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/currently_playing"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"
+                />
+
+            <Button
+                android:id="@+id/teamRostersMenu"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/team_rosters"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:weightSum="2"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp">-->
+
+            <Button
+                android:id="@+id/player_stat_layout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/player_stats_main"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+
+            <Button
+                android:id="@+id/schedule_layout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/schedules_main"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:weightSum="2"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp">-->
+
+            <Button
+                android:id="@+id/channel_layout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/channels_main"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+
+            <Button
+                android:id="@+id/newsFeedMenu"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/news_feed"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:weightSum="2"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp">-->
+
+            <Button
+                android:id="@+id/buy_tickets_menu"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/buy_tickets"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+
+            <Button
+                android:id="@+id/standings_menu"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/standings"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:weightSum="1"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp">-->
+
+            <Button
+                android:id="@+id/nearby_bars"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:textColor="@color/white"
+                android:text="@string/find_nearby_bars"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:backgroundTint="@color/light_purp"/>
+            <!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

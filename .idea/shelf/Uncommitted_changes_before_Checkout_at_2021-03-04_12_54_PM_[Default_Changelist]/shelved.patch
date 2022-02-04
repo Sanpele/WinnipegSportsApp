@@ -1,0 +1,17 @@
+Index: app/src/main/java/comp3350/winSport/persistence/hsqldb/TeamDataHSQLDB.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package comp3350.winSport.persistence.hsqldb;\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.PreparedStatement;\r\nimport java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\nimport java.sql.Statement;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\nimport comp3350.winSport.objects.Game;\r\nimport comp3350.winSport.objects.Player;\r\nimport comp3350.winSport.objects.Team;\r\nimport comp3350.winSport.persistence.ITeam;\r\n\r\n\r\npublic class TeamDataHSQLDB implements ITeam {\r\n\r\n    private final String dbPath;\r\n\r\n    public TeamDataHSQLDB(final String dbPath) {\r\n        this.dbPath = dbPath;\r\n    }\r\n\r\n    private Connection connection() throws SQLException {\r\n        return DriverManager.getConnection(\"jdbc:hsqldb:file:\" + dbPath + \";shutdown=true\", \"SA\", \"\");\r\n    }\r\n\r\n    private Team fromResultSet(final ResultSet rs) throws SQLException {\r\n        final int teamID = Integer.parseInt(rs.getString(\"TEAMID\"));\r\n        final String teamName = rs.getString(\"NAME\");\r\n        ArrayList<Player> players = new ArrayList<>();\r\n        players.add(new Player());\r\n        players.add(new Player());\r\n        return new Team(teamName, players, teamID);\r\n    }\r\n\r\n    @Override\r\n    public List<Team> getTeams() {\r\n\r\n        final List<Team> teams = new ArrayList<>();\r\n\r\n        try (final Connection c = connection()) {\r\n            final Statement st = c.createStatement();\r\n            final ResultSet rs = st.executeQuery(\"SELECT * FROM TEAMS\");\r\n\r\n            while (rs.next()) {\r\n                final Team team = fromResultSet(rs);\r\n                teams.add(team);\r\n            }\r\n\r\n            rs.close();\r\n            st.close();\r\n        }\r\n        catch (final SQLException e) {\r\n            e.printStackTrace();\r\n        }\r\n\r\n        return teams;\r\n    }\r\n\r\n    @Override\r\n    public Team getSingleTeam() {\r\n        return null;\r\n    }\r\n\r\n    @Override\r\n    public Team getTeamByName(String name) {\r\n        return null;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/comp3350/winSport/persistence/hsqldb/TeamDataHSQLDB.java	(revision 6a38b9706ec96e01cd0051d20575f5204205b631)
++++ app/src/main/java/comp3350/winSport/persistence/hsqldb/TeamDataHSQLDB.java	(date 1614717304916)
+@@ -39,7 +39,6 @@
+     public List<Team> getTeams() {
+ 
+         final List<Team> teams = new ArrayList<>();
+-
+         try (final Connection c = connection()) {
+             final Statement st = c.createStatement();
+             final ResultSet rs = st.executeQuery("SELECT * FROM TEAMS");

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.PlayersActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchTxt"
+        android:layout_below="@id/toolbar"
+        android:hint="Search Player name"
+        android:padding="16sp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/player_rv_stats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchTxt"
+        android:layout_marginTop="-4dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

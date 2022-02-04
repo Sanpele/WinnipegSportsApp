@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.PlayerStatsActivity"
+
+
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@id/toolbar">
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/playerProfile"
+
+        android:layout_margin="16sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_label"
+        android:text="Name : "
+        android:textSize="30sp"
+        android:layout_below="@id/playerProfile"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_name_textView"
+        android:text="Jane Doe"
+        android:layout_toRightOf="@id/name_label"
+        android:textSize="30sp"
+        android:layout_below="@id/playerProfile"
+        android:textColor="@color/red"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/games_played_label"
+        android:text="Games Played : "
+        android:textSize="30sp"
+        android:layout_below="@id/name_label"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/games_played_textView"
+        android:text="1"
+        android:layout_toRightOf="@id/games_played_label"
+        android:textSize="30sp"
+        android:layout_below="@id/name_label"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/team_name"
+        android:text="Team : "
+        android:textSize="30sp"
+        android:layout_below="@id/games_played_label"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/team_name__textView"
+        android:text="team A"
+        android:layout_toRightOf="@id/name_label"
+        android:textSize="30sp"
+        android:layout_below="@id/games_played_label"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_league"
+        android:text="League : "
+        android:textSize="30sp"
+        android:layout_below="@id/team_name"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_league__textView"
+        android:text="1"
+        android:layout_toRightOf="@id/player_league"
+        android:textSize="30sp"
+        android:layout_below="@id/team_name"
+        android:textColor="@color/red"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_position"
+        android:text="Position : "
+        android:textSize="30sp"
+        android:layout_below="@id/player_league"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_position__textView"
+        android:text="RW"
+        android:layout_toRightOf="@id/player_position"
+        android:textSize="30sp"
+        android:layout_below="@id/player_league"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_season_label"
+        android:text="Season : "
+        android:textSize="30sp"
+        android:layout_below="@id/player_position"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_season__textView"
+        android:text="fall"
+        android:layout_toRightOf="@+id/game_season_label"
+        android:textSize="30sp"
+        android:layout_below="@id/player_position"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_age"
+        android:text="Age : "
+        android:textSize="30sp"
+        android:layout_below="@id/game_season_label"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_age__textView"
+        android:text="27"
+        android:layout_toRightOf="@id/player_age"
+        android:textSize="30sp"
+        android:layout_below="@id/game_season_label"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_goals"
+        android:text="Goals : "
+        android:textSize="30sp"
+        android:layout_below="@id/player_age"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_goals__textView"
+        android:text="1"
+        android:layout_toRightOf="@id/player_goals"
+        android:textSize="30sp"
+        android:layout_below="@id/player_age"
+        android:textColor="@color/red"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_assists"
+        android:text="Assists : "
+        android:textSize="30sp"
+        android:layout_below="@id/player_goals"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_assists__textView"
+        android:text="1"
+        android:layout_toRightOf="@id/player_assists"
+        android:textSize="30sp"
+        android:layout_below="@id/player_goals"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/points"
+        android:text="Points : "
+        android:textSize="30sp"
+        android:layout_below="@id/player_assists"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/points__textView"
+        android:text="1"
+        android:layout_toRightOf="@id/player_assists"
+        android:textSize="30sp"
+        android:layout_below="@id/player_assists"
+        android:textColor="@color/red"
+        />
+
+
+    <TextView
+        android:id="@+id/player_goals_perGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/points"
+        android:text="Goals Per Game : "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goals_perGame__textView"
+        android:text="1"
+        android:layout_toRightOf="@id/player_goals_perGame"
+        android:textSize="30sp"
+        android:layout_below="@id/points"
+        android:textColor="@color/red"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_assists_pergame"
+        android:text="Assists Per Game : "
+        android:textSize="30sp"
+        android:layout_below="@id/player_goals_perGame"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_assists_pergame_textView"
+        android:text="1"
+        android:layout_toRightOf="@id/player_assists_pergame"
+        android:textSize="30sp"
+        android:layout_below="@id/player_goals_perGame"
+        android:textColor="@color/red"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_shots_PerGame"
+        android:text="Shots Per Game : "
+        android:textSize="30sp"
+        android:layout_below="@id/player_assists_pergame"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_shots_PerGame_textView"
+        android:text="10"
+        android:layout_toRightOf="@id/player_shots_PerGame"
+        android:textSize="30sp"
+        android:layout_below="@id/player_assists_pergame"
+        android:textColor="@color/red"
+        />
+    </RelativeLayout>
+</RelativeLayout>

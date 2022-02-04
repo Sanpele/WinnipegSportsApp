@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Winnipeg Sports</string>
+    <string name="card_team_logo">team logo</string>
+    <string name="league_name">LEAGUE NAME</string>
+    <string name="team_name">TEAM NAME</string>
+    <string name="display_score">0 - 0</string>
+    <string name="display_time">2 hours ago</string>
+    <string name="something">Something</string>
+    <string name="_26">#26</string>
+    <string name="rw">RW</string>
+    <string name="home_team">Home Team</string>
+    <string name="currently_playing">Currently Playing</string>
+    <string name="comming_soon">Coming Soon</string>
+    <string name="team_rosters">Team Rosters</string>
+    <string name="title_activity_teams">teams</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="potential_player_image">Potential Player Image</string>
+    <string name="winnipeg_sports_app" />
+    <string name="by_group_6" />
+    <string name="content">CONTENT</string>
+    <string name="player_name">Player Name</string>
+    <string name="player_stats">Player Stats</string>
+    <string name="schedules">Schedules</string>
+    <string name="channels">Channels</string>
+    <string name="track_live_game">Track Live Game</string>
+    <string name="thur_jan_14">Thur, Jan 14</string>
+    <string name="vs_tor">VS. TOR</string>
+    <string name="otw_4_3">OTW 4-3</string>
+
+    <string name="CBCSports"><a href="https://www.cbc.ca/sports">CBCSports</a></string>
+    <string name="Sportsnet"><a href="https://www.sportsnet.ca">Sportsnet</a></string>
+    <string name="TSN"><a href="https://www.tsn.ca">TSN</a></string>
+
+    <string name="CalgaryFlames"><a href="https://www.nhl.com/flames/tickets/">https://www.nhl.com/flames/tickets/</a></string>
+    <string name="EdmontonOilers"><a href="https://www.ticketmaster.ca/Edmonton-Oilers-tickets/">https://www.ticketmaster.ca/Edmonton-Oilers-tickets/</a></string>
+    <string name="MontréalCanadiens"><a href="https://www.nhl.com/canadiens/tickets">https://www.nhl.com/canadiens/tickets</a></string>
+    <string name="OttawaSenators"><a href="https://www.nhl.com/senators/tickets">https://www.nhl.com/senators/tickets</a></string>
+    <string name="TorontoMapleLeafs"><a href="https://www.nhl.com/mapleleafs/tickets/">https://www.nhl.com/mapleleafs/tickets/</a></string>
+    <string name="VancouverCanucks"><a href="https://tickets.canucks.com/">https://tickets.canucks.com/</a></string>
+    <string name="WinnipegJets"><a href="https://www.nhl.com/jets/tickets/single-game-tickets">https://www.nhl.com/jets/tickets/single-game-tickets</a></string>
+
+
+    <string name="player_stats_main">PLAYER STATS</string>
+    <string name="schedules_main">SCHEDULES</string>
+    <string name="channels_main">CHANNELS</string>
+    <string name="track_live_game_main">TRACK LIVE GAME</string>
+    <string name="news_item">News Item</string>
+    <string name="date_posted">Date posted</string>
+    <string name="relevant_news_image">relevant news image</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetuer_adipiscing_elit_aenean_commodo_ligula_eget_dolor_aenean_massa_cum_sociis_natoque_penatibus_et">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</string>
+    <string name="like">Like</string>
+    <string name="_0_likes">0 Likes</string>
+    <string name="dislike">dislike</string>
+    <string name="_0_dislikes">0 Dislikes</string>
+    <string name="buy_tickets">Buy Tickets</string>
+    <string name="standings">Standings</string>
+    <string name="news_feed">News Feed</string>
+    <string name="find_nearby_bars">Find Nearby Bars</string>
+    <string name="teampicture">TeamPicture</string>
+    <string name="teamname">TeamName</string>
+    <string name="_32">32</string>
+    <string name="w1">W1</string>
+    <string name="Teams_Standing">Teams</string>
+    <string name="OT_standing">OT</string>
+    <string name="Pts_standing">Pts</string>
+    <string name="STK_standing">STK</string>
+    <string name="team_name_ticket">Team Name</string>
+    <string name="ticket_link_text">Link To tickets webpage</string>
+
+
+</resources>

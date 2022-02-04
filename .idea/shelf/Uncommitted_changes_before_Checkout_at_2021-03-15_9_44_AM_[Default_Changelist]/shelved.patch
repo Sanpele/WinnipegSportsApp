@@ -1,0 +1,22 @@
+Index: app/src/main/java/comp3350/winSport/presentation/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package comp3350.winSport.presentation;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.appcompat.widget.Toolbar;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\n\r\nimport comp3350.winSport.R;\r\n\r\npublic class MainActivity extends AppCompatActivity implements View.OnClickListener{\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n\r\n        Toolbar toolbar = findViewById(R.id.toolbar);\r\n        setSupportActionBar(toolbar);\r\n        getSupportActionBar().setTitle(\"Winnipeg Sports\");\r\n\r\n        Button button1 = (Button)findViewById(R.id.currentlyPlayingMenu);\r\n        Button button2 = (Button)findViewById(R.id.teamRostersMenu);\r\n        Button button3 = (Button)findViewById(R.id.player_stat_layout);\r\n        Button button4 = (Button)findViewById(R.id.schedule_layout);\r\n        Button button5 = (Button)findViewById(R.id.channel_layout);\r\n        Button button6 = (Button)findViewById(R.id.live_game_layout);\r\n\r\n        button1.setOnClickListener(this);\r\n        button2.setOnClickListener(this);\r\n        button3.setOnClickListener(this);\r\n        button4.setOnClickListener(this);\r\n        button5.setOnClickListener(this);\r\n        button6.setOnClickListener(this);\r\n    }\r\n\r\n\r\n    @Override\r\n    public void onClick(View v) {\r\n        switch(v.getId()) {\r\n            case R.id.currentlyPlayingMenu:\r\n                // activate currently playing menu\r\n                Intent intent1 = new Intent(MainActivity.this,CurrentlyPlayingActivity.class);\r\n                MainActivity.this.startActivity(intent1);\r\n                break;\r\n            case R.id.teamRostersMenu:\r\n                // games menu\r\n                Intent intent2 = new Intent(MainActivity.this,Teams.class);\r\n                MainActivity.this.startActivity(intent2);\r\n                break;\r\n            case R.id.player_stat_layout:\r\n                // Player Stats\r\n                Intent intent3 = new Intent(MainActivity.this, PlayersActivity.class);\r\n                MainActivity.this.startActivity(intent3);\r\n                break;\r\n            case R.id.schedule_layout:\r\n                // Player Stats\r\n//                Intent intent4 = new Intent(MainActivity.this, PlayersActivity.class);\r\n//                MainActivity.this.startActivity(intent4);\r\n                break;\r\n            case R.id.channel_layout:\r\n                // Player Stats\r\n//                Intent intent5 = new Intent(MainActivity.this, PlayersActivity.class);\r\n//                MainActivity.this.startActivity(intent5);\r\n                break;\r\n            case R.id.live_game_layout:\r\n                // Player Stats\r\n//                Intent intent6 = new Intent(MainActivity.this, PlayersActivity.class);\r\n//                MainActivity.this.startActivity(intent6);\r\n                break;\r\n            default:\r\n                break;\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/comp3350/winSport/presentation/MainActivity.java	(revision a47aff0cf685fe8202259bb482f1d7fd8faa8287)
++++ app/src/main/java/comp3350/winSport/presentation/MainActivity.java	(date 1615819464117)
+@@ -56,9 +56,9 @@
+                 MainActivity.this.startActivity(intent3);
+                 break;
+             case R.id.schedule_layout:
+-                // Player Stats
+-//                Intent intent4 = new Intent(MainActivity.this, PlayersActivity.class);
+-//                MainActivity.this.startActivity(intent4);
++//                 Player Stats
++                Intent intent4 = new Intent(MainActivity.this, PlayersActivity.class);
++                MainActivity.this.startActivity(intent4);
+                 break;
+             case R.id.channel_layout:
+                 // Player Stats

@@ -1,0 +1,17 @@
+Index: app/src/main/java/comp3350/winSport/presentation/BarsActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package comp3350.winSport.presentation;\n\nimport androidx.appcompat.app.AppCompatActivity;\nimport androidx.appcompat.widget.Toolbar;\n\nimport comp3350.winSport.R;\nimport comp3350.winSport.business.AccessLocations;\n\nimport android.os.Bundle;\n\npublic class BarsActivity extends AppCompatActivity {\n    AccessLocations bars;\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_bars);\n        String venueName=\"\";\n        Bundle extras=getIntent().getExtras();\n        if(extras!=null)\n        {\n            venueName=extras.getString(\"venueName\");\n        }\n        try {\n            Toolbar toolbar = findViewById(R.id.toolbar);\n            setSupportActionBar(toolbar);\n            getSupportActionBar().setTitle(\"bars near\"+venueName);\n        } catch (NullPointerException e) {\n            e.printStackTrace();\n        }\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/comp3350/winSport/presentation/BarsActivity.java	(revision 999d6ffb7316df1a6d81d16d345969d3983b44e9)
++++ app/src/main/java/comp3350/winSport/presentation/BarsActivity.java	(date 1617035394000)
+@@ -27,5 +27,6 @@
+         } catch (NullPointerException e) {
+             e.printStackTrace();
+         }
++
+     }
+ }
+\ No newline at end of file

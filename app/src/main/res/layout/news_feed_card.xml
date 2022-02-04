@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_margin="30sp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6sp"
+        android:padding="16sp"
+        >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/news_item"
+           android:id="@+id/post_title"
+           android:textSize="30sp"
+           android:textColor="@color/black"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_posted"
+            android:layout_below="@+id/post_title"
+            android:text="@string/date_posted"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/post_image"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/relevant_news_image"
+            android:layout_below="@id/date_posted"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/caption"
+            android:textColor="@color/black"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetuer_adipiscing_elit_aenean_commodo_ligula_eget_dolor_aenean_massa_cum_sociis_natoque_penatibus_et"
+            android:textSize="15sp"
+            android:layout_below="@id/post_image"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/like_button"
+
+            android:text="@string/like"
+            android:layout_below="@+id/caption"
+            />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/numLikes"
+          android:text="@string/_0_likes"
+          android:textColor="@color/black"
+          android:textSize="15sp"
+
+          android:layout_below="@+id/like_button"
+
+          />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dislike_button"
+            android:layout_below="@+id/caption"
+            android:layout_marginStart="60sp"
+            android:layout_toEndOf="@+id/like_button"
+            android:text="@string/dislike"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numDislikes"
+            android:text="@string/_0_dislikes"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="155sp"
+            android:layout_below="@+id/dislike_button"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentsRV"
+            android:background="#3498db"
+            android:outlineAmbientShadowColor="@color/black"
+            android:layout_below="@+id/numLikes"
+            />
+        <EditText
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentTxt"
+            android:layout_below="@id/commentsRV"
+            android:hint="Comment here"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_button"
+            android:layout_below="@id/commentsRV"
+            android:layout_toRightOf="@id/commentTxt"
+            android:text="comment"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
